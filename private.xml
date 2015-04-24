@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<root>
+
+  <list>
+
+    <!-- For Filco (US) -->
+      <item>
+        <name>Filco for Mac</name>
+        <identifier>private.filcoForMac</identifier>
+        <!-- swap Command and Option -->
+        <autogen>
+          __KeyToKey__
+          KeyCode::OPTION_L, KeyCode::COMMAND_L
+        </autogen>
+        <autogen>
+          __KeyToKey__
+          KeyCode::COMMAND_L, KeyCode::OPTION_L
+        </autogen>
+        <!-- mapping Fn to Option -->
+        <autogen>
+          __KeyToKey__
+          KeyCode::OPTION_R, KeyCode::FN
+        </autogen>
+        <!-- and mapping Option to PC_App -->
+        <autogen>
+          __KeyToKey__
+          KeyCode::PC_APPLICATION, KeyCode::OPTION_R
+        </autogen>
+        <!-- Mapping FN to Help -->
+        <autogen>
+          __KeyToKey__
+          KeyCode::HELP, KeyCode::FN
+        </autogen>
+      </item>
+
+    <!-- For HHKB -->
+      <item>
+        <name>HHKB Key Mapping</name>
+
+        <!-- Mapping right SHIFT + ESCAPE to right SHIFT + BACKQUOTE => "~" -->
+        <identifier>private.hhkbKeyMapping</identifier>
+        <autogen>
+          __KeyToKey__
+          KeyCode::ESCAPE, ModifierFlag::SHIFT_R | ModifierFlag::NONE,
+          KeyCode::BACKQUOTE, ModifierFlag::SHIFT_R
+        </autogen>
+      </item>
+
+
+
+    <!-- setting section template
+
+      <item>
+        <name></name>
+        <identifier></identifier>
+        <autogen></autogen>
+      </item>
+
+    -->
+  </list>
+
+</root>
