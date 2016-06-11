@@ -46,17 +46,23 @@
         </autogen>
       </item>
 
-
-
-    <!-- setting section template
-
       <item>
+        <name>Prevent window close when expending Emmet in Atom</name>
+
+        <identifier>private.preventWindowCloseWhenExpendingEmmetInAtom</identifier>
+        <only>Atom</only>
+        <autogen>
+          __KeyToKey__
+          KeyCode::W, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L,
+          KeyCode::E, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
+        </autogen>
+      </item>
+
+      <!-- <item>
         <name></name>
         <identifier></identifier>
         <autogen></autogen>
-      </item>
-
-    -->
+      </item> -->
   </list>
 
 </root>
